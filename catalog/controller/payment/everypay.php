@@ -130,7 +130,7 @@ class ControllerPaymentEverypay extends Controller
                 }else{
                      $this->model_checkout_order->confirm($this->request->post['order_reference'], 10, '', true);
                 }
-                $this->response->redirect($this->url->link('checkout/failure'));
+                $this->response->redirect($this->url->link('checkout/checkout'));
                 break;
             default:
                 $this->response->redirect($this->url->link('checkout/checkout'));

@@ -70,7 +70,7 @@
                         </tr>
 
                         <tr>
-                            <td title="<?php echo $help_processing_account; ?>"><span class="required">*</span><?php echo $entry_account_id; ?></td>
+                            <td title="<?php echo $help_processing_account; ?>"><span class="required">*</span><?php echo $entry_account_id; ?><span class="help"><?php echo $help_processing_account ?></span></td>
                             <td>
                                 <input type="text" name="everypay_account_id" value="<?php echo $everypay_account_id; ?>" placeholder="<?php echo $entry_account_id; ?>" class="form-control" required />
                                 <?php if ($error_account_id) { ?>
@@ -80,7 +80,7 @@
                         </tr>
 
                         <tr>
-                            <td title="<?php echo $help_mode; ?>"><?php echo $entry_mode; ?></td>
+                            <td title="<?php echo $help_mode; ?>"><?php echo $entry_mode; ?><span class="help"><?php echo $help_mode ?></span></td>
                             <td>
                                 <select name="everypay_mode" id="input-server" class="form-control">
                                     <?php if ($everypay_mode == 'live') { ?>
@@ -131,14 +131,14 @@
                         <!--                        </tr>-->
 
                         <tr>
-                            <td title="<?php echo $help_total; ?>"><?php echo $entry_total; ?></td>
+                            <td title="<?php echo $help_total; ?>"><?php echo $entry_total; ?><span class="help"><?php echo $help_total ?></span></td>
                             <td>
                                 <input type="text" name="everypay_total" value="<?php echo $everypay_total; ?>" placeholder="<?php echo $entry_total; ?>" />
                             </td>
                         </tr>
 
                         <tr>
-                            <td title="<?php echo $help_order_status; ?>"><?php echo $entry_order_status; ?></td>
+                            <td title="<?php echo $help_order_status; ?>"><?php echo $entry_order_status; ?><span class="help"><?php echo $help_order_status ?></span></td>
                             <td><select name="everypay_order_status_id" id="input-order-status" class="form-control">
                                     <?php foreach ($order_statuses as $order_status) { ?>
                                         <?php if ($order_status['order_status_id'] == $everypay_order_status_id) { ?>
@@ -168,7 +168,7 @@
                         </tr>
 
                         <tr>
-                            <td title="<?php echo $help_sort_order; ?>"><?php echo $entry_sort_order; ?></td>
+                            <td title="<?php echo $help_sort_order; ?>"><?php echo $entry_sort_order; ?><span class="help"><?php echo $help_sort_order ?></span></td>
                             <td><input type="text" name="everypay_sort_order" value="<?php echo $everypay_sort_order; ?>" placeholder="<?php echo $entry_sort_order; ?>" id="input-sort-order" class="form-control" /></td>
                         </tr>
 
