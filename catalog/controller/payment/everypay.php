@@ -49,7 +49,7 @@ class ControllerPaymentEverypay extends Controller
 
         $this->data['checkout_title'] = $this->config->get('everypay_title');// == '' ? '';
 
-        $this->data['form_data'] = $everyPay->getFields($fields, '', true);
+        $this->data['form_data'] = $everyPay->getFields($fields, $order['language_code'], true);
 
         if($this->config->get('everypay_mode') === 'live'){
             $this->data['action'] = 1;
